@@ -32,7 +32,7 @@ function print_login_row ($jsonData) {
 
 function valid_login_message ($jsonData) {
 
-    return ( (str_starts_with($jsonData["message"], "Login")) or (str_starts_with($jsonData["message"], "Logout")) );
+    return ( (str_starts_with($jsonData["message"], "Login successful")) or (str_starts_with($jsonData["message"], "Logout")) );
 
 }
 
