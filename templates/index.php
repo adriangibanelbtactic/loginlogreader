@@ -36,13 +36,29 @@ function valid_login_message ($jsonData) {
 
 }
 
-$audit_log_filename = 'data' . '/audit.log';
-$audit_log_file_handle = fopen($audit_log_filename, 'r');
 function get_all_lines($audit_log_file_handle) {
     while (!feof($audit_log_file_handle)) {
         yield fgets($audit_log_file_handle);
     }
 }
+
+function get_log_filename () {
+
+    $auditType = $config->getSystemValueString('log_type_audit', 'file');
+    $logFile = $config->getSystemValueString('logfile_audit', '');
+
+    if ($auditType === 'file' && !$logFile) {
+        $default = $config->getSystemValue('datadirectory', \OC::$SERVERROOT . '/data') . '/audit.log';
+        // Legacy way was appconfig, now it's paralleled with the normal log config
+        $logFile = $config->getAppValue('admin_audit', 'logfile', $default);
+    }
+
+    return ($logFile);
+
+}
+
+$audit_log_filename = get_log_filename();
+$audit_log_file_handle = fopen($audit_log_filename, 'r');
 
 print_login_header();
 
