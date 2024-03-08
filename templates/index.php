@@ -45,13 +45,11 @@ function get_all_lines($audit_log_file_handle) {
 $audit_log_filename = $_['logfile'];
 $admin_audit_is_installed = $_['adminauditisinstalled'];
 
-$audit_log_file_handle = fopen($audit_log_filename, 'r');
-
 if (!($admin_audit_is_installed)) {
 
   echo ("Make sure that admin_audit is both installed and active.");
 
-} else if (!(file_exists($audit_log_file_handle))) {
+} else if (!(file_exists($audit_log_filename))) {
 
   echo ("File: '". $audit_log_filename . "' does not exist !!! ");
 
