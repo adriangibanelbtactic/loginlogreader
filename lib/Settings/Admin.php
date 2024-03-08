@@ -27,21 +27,27 @@ use OCP\IL10N;
 use OCP\Settings\IDelegatedSettings;
 
 class Admin implements IDelegatedSettings {
-	/** @var IL10N */
-	private $l;
+	/**
+	* @var AdminTemplate
+	*/
+	private $adminTemplate;
 
-	public function __construct(IL10N $l) {
-		$this->l = $l;
+	/**
+	* @param AdminTemplate $adminTemplate
+	*/
+	public function __construct(AdminTemplate $adminTemplate)
+	{
+		$this->adminTemplate = $adminTemplate;
 	}
+
 	/**
 	 * @return TemplateResponse
 	 */
 	public function getForm() {
-		return new TemplateResponse('loginlogreader',
-			'index',
-			['appId' => 'loginlogreader', 'inline-settings' => 'true'],
-			'');
-	}
+    {
+        $template = $this->adminTemplate->getTemplate();
+        return $template;
+    }
 
 	/**
 	 * @return string the section ID, e.g. 'sharing'
