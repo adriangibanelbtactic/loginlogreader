@@ -29,6 +29,7 @@ dist/$(package_name).tar.gz:
 	mkdir -p dist
 	rsync -r \
 		appinfo \
+		img \
 		lib \
 		templates \
 		LICENSE \
