@@ -43,11 +43,11 @@ class Admin implements IDelegatedSettings {
 	/**
 	 * @return TemplateResponse
 	 */
-	public function getForm() {
-    {
-        $template = $this->adminTemplate->getTemplate();
-        return $template;
-    }
+	public function getForm()
+	{
+		$template = $this->adminTemplate->getTemplate();
+		return $template;
+	}
 
 	/**
 	 * @return string the section ID, e.g. 'sharing'
