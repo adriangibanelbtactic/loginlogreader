@@ -20,6 +20,7 @@
 namespace OCA\LoginLogReader\Settings;
 
 use OCP\IConfig;
+use OCP\App\IAppManager;
 
 class AppSettings
 {
@@ -27,13 +28,18 @@ class AppSettings
     /** @var IConfig */
     private $config;
 
+    /** @var IAppManager */
+    private $appManager;
+
     /**
      * AppSettings constructor.
      * @param $config
+     * @param $appManager
      */
-    public function __construct(IConfig $config)
+    public function __construct(IConfig $config, IAppManager $appManager)
     {
         $this->config = $config;
+        $this->appManager = $appManager;
     }
 
     public function getLogFile()
@@ -50,6 +56,11 @@ class AppSettings
 		}
 
 		return ($logFile);
+    }
+
+    public function adminAuditIsInstalled()
+    {
+        return ($this->appManager->isInstalled('admin_audit'));
     }
 
 }

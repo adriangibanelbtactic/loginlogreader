@@ -44,7 +44,8 @@ class AdminTemplate
             Application::APP_ID,
             'index',
             [
-                'logfile' => $this->appConfig->getLogFile()
+                'logfile' => $this->appConfig->getLogFile(),
+                'adminauditisinstalled' => $this->appConfig->adminAuditIsInstalled()
             ],
             'blank'
         );
