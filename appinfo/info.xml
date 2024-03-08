@@ -43,7 +43,4 @@
         <admin>OCA\LoginLogReader\Settings\Admin</admin>
         <admin-section>OCA\LoginLogReader\Settings\Section</admin-section>
     </settings>
-    <settings-sections>
-        <admin>OCA\LoginLogReader\Settings\Section</admin>
-    </settings-sections>
 </info>
