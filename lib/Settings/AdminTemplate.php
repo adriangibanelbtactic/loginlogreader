@@ -39,7 +39,7 @@ class AdminTemplate
      */
     public function getTemplate()
     {
-        $logfile = $this->get_log_filename();
+        $logfile = $this->getLogFile();
 
         $template = new TemplateResponse(
             Application::APP_ID,
