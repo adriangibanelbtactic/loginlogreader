@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!--
+  ~ Login Log Reader
+  ~ Copyright (C) 2024 BTACTIC, S.C.C.L.
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as
+  ~ published by the Free Software Foundation, either version 3 of the
+  ~ License, or (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  -->
+
+<info xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+    <id>loginlogreader</id>
+    <name>Login Log Reader</name>
+    <summary>Integration with Zimbra</summary>
+    <description>
+        Adds a page that reads login from the audit log.
+    </description>
+    <licence>AGPL</licence>
+    <author>BTACTIC</author>
+    <version>0.8.27</version>
+    <namespace>LoginLogReader</namespace>
+    <category>auth</category>
+    <category>integration</category>
+
+    <website>https://github.com/btactic/loginlogreader.git</website>
+    <repository type="git">https://github.com/btactic/loginlogreader.git</repository>
+    <bugs>https://github.com/btactic/loginlogreader/issues</bugs>
+
+    <dependencies>
+        <nextcloud min-version="27" max-version="27"/>
+    </dependencies>
+    <settings>
+        <admin>OCA\LoginLogReader\Settings\Admin</admin>
+        <admin-section>OCA\LoginLogReader\Settings\Section</admin-section>
+    </settings>
+    <settings-sections>
+        <admin>OCA\LoginLogReader\Settings\Section</admin>
+    </settings-sections>
+</info>
