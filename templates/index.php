@@ -60,16 +60,27 @@ function get_log_filename () {
 $audit_log_filename = get_log_filename();
 $audit_log_file_handle = fopen($audit_log_filename, 'r');
 
-print_login_header();
+if (!(file_exists($audit_log_file_handle))) {
 
-foreach (get_all_lines($audit_log_file_handle) as $line) {
-    $jsonString = $line;
-    $jsonData = json_decode($jsonString, true);
-    if (valid_login_message($jsonData)) {
-        print_login_row($jsonData);
+  echo "File: '". $audit_log_filename . "' does not exist !!! "
+
+} else {
+
+    $audit_log_file_handle = fopen($audit_log_filename, 'r');
+
+    print_login_header();
+
+    foreach (get_all_lines($audit_log_file_handle) as $line) {
+        $jsonString = $line;
+        $jsonData = json_decode($jsonString, true);
+        if (valid_login_message($jsonData)) {
+            print_login_row($jsonData);
+        }
     }
-}
-print_login_footer();
+    print_login_footer();
 
-fclose($audit_log_file_handle);
+    fclose($audit_log_file_handle);
+
+}
+
 ?>
