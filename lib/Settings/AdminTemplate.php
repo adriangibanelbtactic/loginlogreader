@@ -42,7 +42,7 @@ class AdminTemplate
 
         $template = new TemplateResponse(
             Application::APP_ID,
-            'admin',
+            'index',
             [
                 'logfile' => $this->appConfig->getLogFile()
             ],
