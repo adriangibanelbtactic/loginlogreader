@@ -32,7 +32,6 @@ class AdminTemplate
     public function __construct(AppSettings $appConfig)
     {
         $this->appConfig = $appConfig;
-        $this->zimbraAuthentication = $zimbraAuthentication;
     }
 
     /**
