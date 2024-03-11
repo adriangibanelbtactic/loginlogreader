@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   height="16"
+   width="16"
+   viewBox="0 0 16 16"
+   version="1"
+   id="svg14"
+   sodipodi:docname="app.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs18" />
+  <sodipodi:namedview
+     id="namedview16"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="46.4375"
+     inkscape:cx="17.862719"
+     inkscape:cy="7.4724092"
+     inkscape:window-width="1920"
+     inkscape:window-height="987"
+     inkscape:window-x="0"
+     inkscape:window-y="36"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg14" />
+  <rect
+     rx=".5"
+     ry=".5"
+     height="4"
+     width="4"
+     y="1"
+     x="1"
+     fill="#fff"
+     id="rect2" />
+  <rect
+     rx=".5"
+     ry=".5"
+     height="1"
+     width="9"
+     y="2"
+     x="6"
+     fill="#fff"
+     id="rect4" />
+  <rect
+     rx=".5"
+     ry=".5"
+     height="4"
+     width="4"
+     y="6"
+     x="1"
+     fill="#fff"
+     id="rect6" />
+  <rect
+     rx=".5"
+     ry=".5"
+     height="1"
+     width="9"
+     y="7"
+     x="6"
+     fill="#fff"
+     id="rect8" />
+  <rect
+     rx=".5"
+     ry=".5"
+     height="4"
+     width="4"
+     y="11"
+     x="1"
+     fill="#fff"
+     id="rect10" />
+  <rect
+     rx=".5"
+     ry=".5"
+     height="1"
+     width="9"
+     y="12"
+     x="6"
+     fill="#fff"
+     id="rect12" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#cccccc;fill-opacity:1;stroke:none"
+     x="1.0767161"
+     y="12.468371"
+     id="text178"><tspan
+       sodipodi:role="line"
+       id="tspan176"
+       x="1.0767161"
+       y="12.468371">@</tspan></text>
+</svg>
