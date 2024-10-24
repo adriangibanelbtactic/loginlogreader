@@ -27,7 +27,7 @@
     </description>
     <licence>AGPL</licence>
     <author>BTACTIC</author>
-    <version>0.0.3</version>
+    <version>0.0.4</version>
     <namespace>LoginLogReader</namespace>
     <category>auth</category>
     <category>integration</category>
